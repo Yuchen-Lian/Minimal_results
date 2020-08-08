@@ -1,0 +1,369 @@
+Namespace(batch_size=16, data_path_prefix='./data/Iconic_LessCounting/iconicity_markers', eval=None, explosion_eval=120, explosion_train=20, generations=10, hidden_size=20, init_A1='./experiments/models/model_attention1_hidden20_batch16_epoch200_tied1_seed1230.p', init_A1_from_A2=None, max_len=30, n_epochs=100, n_layers=1, no_dev_eval=0, no_test_eval=1, polyglot=0, pretrain_agent=0, random_seed=1230, save_model_path='model', teacher_forcing_ratio=1.0, tied=1, use_attention=1)
+Vocab: defaultdict(None, {'<pad>': 0, 'LEFT': 1, 'RIGHT': 2, 'DOWN': 3, 'UP': 4, '<eos>': 5, '<sos>': 6, '1': 7, '2': 8, '3': 9, 'left': 10, 'right': 11, 'down': 12, 'up': 13, 'M1': 14, 'M2': 15, 'M3': 16, 'M4': 17, 'M5': 18})
+********** Starting generation #1 **********
+total steps is equal to  442900
+Finished epoch 1: Train Avg NLLLoss: 0.1794, Dev Avg NLLLoss: 0.0259, Accuracy Teacher: 0.9119, Accuracy Student: 0.9368
+Finished epoch 2: Train Avg NLLLoss: 0.0022, Dev Avg NLLLoss: 0.0054, Accuracy Teacher: 0.9825, Accuracy Student: 0.9915
+Finished epoch 3: Train Avg NLLLoss: 0.0015, Dev Avg NLLLoss: 0.0031, Accuracy Teacher: 0.9939, Accuracy Student: 0.9954
+Finished epoch 4: Train Avg NLLLoss: 0.0007, Dev Avg NLLLoss: 0.0026, Accuracy Teacher: 0.9938, Accuracy Student: 0.9963
+Finished epoch 5: Train Avg NLLLoss: 0.0009, Dev Avg NLLLoss: 0.0023, Accuracy Teacher: 0.9971, Accuracy Student: 0.9975
+Finished epoch 6: Train Avg NLLLoss: 0.0006, Dev Avg NLLLoss: 0.0039, Accuracy Teacher: 0.9972, Accuracy Student: 0.9949
+Finished epoch 7: Train Avg NLLLoss: 0.0006, Dev Avg NLLLoss: 0.0022, Accuracy Teacher: 0.9971, Accuracy Student: 0.9977
+Finished epoch 8: Train Avg NLLLoss: 0.0005, Dev Avg NLLLoss: 0.0018, Accuracy Teacher: 0.9983, Accuracy Student: 0.9982
+Finished epoch 9: Train Avg NLLLoss: 0.0005, Dev Avg NLLLoss: 0.0016, Accuracy Teacher: 0.9983, Accuracy Student: 0.9985
+Finished epoch 10: Train Avg NLLLoss: 0.0006, Dev Avg NLLLoss: 0.0017, Accuracy Teacher: 0.9982, Accuracy Student: 0.9986
+Finished epoch 11: Train Avg NLLLoss: 0.0006, Dev Avg NLLLoss: 0.0018, Accuracy Teacher: 0.9988, Accuracy Student: 0.9982
+Finished epoch 12: Train Avg NLLLoss: 0.0005, Dev Avg NLLLoss: 0.0019, Accuracy Teacher: 0.9983, Accuracy Student: 0.9983
+Finished epoch 13: Train Avg NLLLoss: 0.0005, Dev Avg NLLLoss: 0.0016, Accuracy Teacher: 0.9981, Accuracy Student: 0.9986
+Finished epoch 14: Train Avg NLLLoss: 0.0005, Dev Avg NLLLoss: 0.0016, Accuracy Teacher: 0.9977, Accuracy Student: 0.9988
+Finished epoch 15: Train Avg NLLLoss: 0.0005, Dev Avg NLLLoss: 0.0017, Accuracy Teacher: 0.9981, Accuracy Student: 0.9986
+Finished epoch 16: Train Avg NLLLoss: 0.0006, Dev Avg NLLLoss: 0.0019, Accuracy Teacher: 0.9989, Accuracy Student: 0.9984
+Finished epoch 17: Train Avg NLLLoss: 0.0004, Dev Avg NLLLoss: 0.0015, Accuracy Teacher: 0.9982, Accuracy Student: 0.9989
+Finished epoch 18: Train Avg NLLLoss: 0.0013, Dev Avg NLLLoss: 0.0020, Accuracy Teacher: 0.9984, Accuracy Student: 0.9978
+Finished epoch 19: Train Avg NLLLoss: 0.0005, Dev Avg NLLLoss: 0.0015, Accuracy Teacher: 0.9984, Accuracy Student: 0.9988
+Finished epoch 20: Train Avg NLLLoss: 0.0010, Dev Avg NLLLoss: 0.0018, Accuracy Teacher: 0.9990, Accuracy Student: 0.9984
+Finished epoch 21: Train Avg NLLLoss: 0.0007, Dev Avg NLLLoss: 0.0015, Accuracy Teacher: 0.9990, Accuracy Student: 0.9989
+Finished epoch 22: Train Avg NLLLoss: 0.0004, Dev Avg NLLLoss: 0.0016, Accuracy Teacher: 0.9991, Accuracy Student: 0.9988
+Finished epoch 23: Train Avg NLLLoss: 0.0004, Dev Avg NLLLoss: 0.0017, Accuracy Teacher: 0.9992, Accuracy Student: 0.9987
+Finished epoch 24: Train Avg NLLLoss: 0.0004, Dev Avg NLLLoss: 0.0014, Accuracy Teacher: 0.9984, Accuracy Student: 0.9988
+Finished epoch 25: Train Avg NLLLoss: 0.0012, Dev Avg NLLLoss: 0.0015, Accuracy Teacher: 0.9988, Accuracy Student: 0.9989
+Finished epoch 26: Train Avg NLLLoss: 0.0004, Dev Avg NLLLoss: 0.0023, Accuracy Teacher: 0.9992, Accuracy Student: 0.9974
+Finished epoch 27: Train Avg NLLLoss: 0.0006, Dev Avg NLLLoss: 0.0014, Accuracy Teacher: 0.9991, Accuracy Student: 0.9989
+Finished epoch 28: Train Avg NLLLoss: 0.0005, Dev Avg NLLLoss: 0.0017, Accuracy Teacher: 0.9983, Accuracy Student: 0.9988
+Finished epoch 29: Train Avg NLLLoss: 0.0005, Dev Avg NLLLoss: 0.0016, Accuracy Teacher: 0.9988, Accuracy Student: 0.9988
+Finished epoch 30: Train Avg NLLLoss: 0.0005, Dev Avg NLLLoss: 0.0019, Accuracy Teacher: 0.9994, Accuracy Student: 0.9982
+Finished epoch 31: Train Avg NLLLoss: 0.0005, Dev Avg NLLLoss: 0.0016, Accuracy Teacher: 0.9991, Accuracy Student: 0.9987
+Finished epoch 32: Train Avg NLLLoss: 0.0003, Dev Avg NLLLoss: 0.0015, Accuracy Teacher: 0.9994, Accuracy Student: 0.9989
+Finished epoch 33: Train Avg NLLLoss: 0.0013, Dev Avg NLLLoss: 0.0016, Accuracy Teacher: 0.9991, Accuracy Student: 0.9989
+Finished epoch 34: Train Avg NLLLoss: 0.0004, Dev Avg NLLLoss: 0.0015, Accuracy Teacher: 0.9990, Accuracy Student: 0.9988
+Finished epoch 35: Train Avg NLLLoss: 0.0003, Dev Avg NLLLoss: 0.0015, Accuracy Teacher: 0.9986, Accuracy Student: 0.9987
+
+Terminated Training for Early Stopping at Epoch 0036
+Dev Avg NLLLoss: 0.0018, Accuracy Teacher: 0.9989, Accuracy Student: 0.9986
+Dev Avg NLLLoss: 4.8206, Accuracy Teacher GT: 0.6802, Accuracy Student GT: 0.0158
+Saved model to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_1
+Saved model dump to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_1.dump
+********** Starting generation #2 **********
+total steps is equal to  442900
+Finished epoch 1: Train Avg NLLLoss: 0.2082, Dev Avg NLLLoss: 0.0157, Accuracy Teacher: 0.8143, Accuracy Student: 0.9535
+Finished epoch 2: Train Avg NLLLoss: 0.0038, Dev Avg NLLLoss: 0.0061, Accuracy Teacher: 0.9747, Accuracy Student: 0.9872
+Finished epoch 3: Train Avg NLLLoss: 0.0017, Dev Avg NLLLoss: 0.0045, Accuracy Teacher: 0.9876, Accuracy Student: 0.9928
+Finished epoch 4: Train Avg NLLLoss: 0.0014, Dev Avg NLLLoss: 0.0042, Accuracy Teacher: 0.9918, Accuracy Student: 0.9934
+Finished epoch 5: Train Avg NLLLoss: 0.0015, Dev Avg NLLLoss: 0.0038, Accuracy Teacher: 0.9944, Accuracy Student: 0.9944
+Finished epoch 6: Train Avg NLLLoss: 0.0013, Dev Avg NLLLoss: 0.0034, Accuracy Teacher: 0.9941, Accuracy Student: 0.9951
+Finished epoch 7: Train Avg NLLLoss: 0.0012, Dev Avg NLLLoss: 0.0037, Accuracy Teacher: 0.9963, Accuracy Student: 0.9945
+Finished epoch 8: Train Avg NLLLoss: 0.0011, Dev Avg NLLLoss: 0.0033, Accuracy Teacher: 0.9960, Accuracy Student: 0.9959
+Finished epoch 9: Train Avg NLLLoss: 0.0010, Dev Avg NLLLoss: 0.0037, Accuracy Teacher: 0.9963, Accuracy Student: 0.9958
+Finished epoch 10: Train Avg NLLLoss: 0.0011, Dev Avg NLLLoss: 0.0033, Accuracy Teacher: 0.9973, Accuracy Student: 0.9950
+Finished epoch 11: Train Avg NLLLoss: 0.0012, Dev Avg NLLLoss: 0.0033, Accuracy Teacher: 0.9970, Accuracy Student: 0.9961
+Finished epoch 12: Train Avg NLLLoss: 0.0010, Dev Avg NLLLoss: 0.0033, Accuracy Teacher: 0.9975, Accuracy Student: 0.9962
+Finished epoch 13: Train Avg NLLLoss: 0.0013, Dev Avg NLLLoss: 0.0039, Accuracy Teacher: 0.9973, Accuracy Student: 0.9945
+Finished epoch 14: Train Avg NLLLoss: 0.0010, Dev Avg NLLLoss: 0.0034, Accuracy Teacher: 0.9976, Accuracy Student: 0.9956
+Finished epoch 15: Train Avg NLLLoss: 0.0009, Dev Avg NLLLoss: 0.0035, Accuracy Teacher: 0.9972, Accuracy Student: 0.9944
+Finished epoch 16: Train Avg NLLLoss: 0.0011, Dev Avg NLLLoss: 0.0034, Accuracy Teacher: 0.9979, Accuracy Student: 0.9955
+Finished epoch 17: Train Avg NLLLoss: 0.0015, Dev Avg NLLLoss: 0.0034, Accuracy Teacher: 0.9981, Accuracy Student: 0.9957
+Finished epoch 18: Train Avg NLLLoss: 0.0012, Dev Avg NLLLoss: 0.0036, Accuracy Teacher: 0.9967, Accuracy Student: 0.9948
+Finished epoch 19: Train Avg NLLLoss: 0.0012, Dev Avg NLLLoss: 0.0033, Accuracy Teacher: 0.9976, Accuracy Student: 0.9956
+Finished epoch 20: Train Avg NLLLoss: 0.0010, Dev Avg NLLLoss: 0.0030, Accuracy Teacher: 0.9977, Accuracy Student: 0.9967
+Finished epoch 21: Train Avg NLLLoss: 0.0010, Dev Avg NLLLoss: 0.0032, Accuracy Teacher: 0.9976, Accuracy Student: 0.9960
+Finished epoch 22: Train Avg NLLLoss: 0.0010, Dev Avg NLLLoss: 0.0030, Accuracy Teacher: 0.9984, Accuracy Student: 0.9966
+Finished epoch 23: Train Avg NLLLoss: 0.0010, Dev Avg NLLLoss: 0.0035, Accuracy Teacher: 0.9985, Accuracy Student: 0.9952
+Finished epoch 24: Train Avg NLLLoss: 0.0011, Dev Avg NLLLoss: 0.0035, Accuracy Teacher: 0.9965, Accuracy Student: 0.9959
+Finished epoch 25: Train Avg NLLLoss: 0.0012, Dev Avg NLLLoss: 0.0031, Accuracy Teacher: 0.9983, Accuracy Student: 0.9962
+Finished epoch 26: Train Avg NLLLoss: 0.0009, Dev Avg NLLLoss: 0.0032, Accuracy Teacher: 0.9980, Accuracy Student: 0.9962
+Finished epoch 27: Train Avg NLLLoss: 0.0008, Dev Avg NLLLoss: 0.0035, Accuracy Teacher: 0.9973, Accuracy Student: 0.9960
+Finished epoch 28: Train Avg NLLLoss: 0.0008, Dev Avg NLLLoss: 0.0036, Accuracy Teacher: 0.9974, Accuracy Student: 0.9962
+
+Terminated Training for Early Stopping at Epoch 0029
+Dev Avg NLLLoss: 0.0041, Accuracy Teacher: 0.9984, Accuracy Student: 0.9954
+Dev Avg NLLLoss: 3.6051, Accuracy Teacher GT: 0.6704, Accuracy Student GT: 0.0210
+Saved model to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_2
+Saved model dump to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_2.dump
+********** Starting generation #3 **********
+total steps is equal to  442900
+Finished epoch 1: Train Avg NLLLoss: 0.1973, Dev Avg NLLLoss: 0.0218, Accuracy Teacher: 0.8045, Accuracy Student: 0.9301
+Finished epoch 2: Train Avg NLLLoss: 0.0055, Dev Avg NLLLoss: 0.0083, Accuracy Teacher: 0.9776, Accuracy Student: 0.9851
+Finished epoch 3: Train Avg NLLLoss: 0.0029, Dev Avg NLLLoss: 0.0081, Accuracy Teacher: 0.9907, Accuracy Student: 0.9833
+Finished epoch 4: Train Avg NLLLoss: 0.0032, Dev Avg NLLLoss: 0.0063, Accuracy Teacher: 0.9898, Accuracy Student: 0.9919
+Finished epoch 5: Train Avg NLLLoss: 0.0021, Dev Avg NLLLoss: 0.0058, Accuracy Teacher: 0.9941, Accuracy Student: 0.9920
+Finished epoch 6: Train Avg NLLLoss: 0.0020, Dev Avg NLLLoss: 0.0063, Accuracy Teacher: 0.9953, Accuracy Student: 0.9892
+Finished epoch 7: Train Avg NLLLoss: 0.0025, Dev Avg NLLLoss: 0.0065, Accuracy Teacher: 0.9963, Accuracy Student: 0.9917
+Finished epoch 8: Train Avg NLLLoss: 0.0026, Dev Avg NLLLoss: 0.0057, Accuracy Teacher: 0.9950, Accuracy Student: 0.9936
+Finished epoch 9: Train Avg NLLLoss: 0.0021, Dev Avg NLLLoss: 0.0058, Accuracy Teacher: 0.9950, Accuracy Student: 0.9933
+Finished epoch 10: Train Avg NLLLoss: 0.0022, Dev Avg NLLLoss: 0.0055, Accuracy Teacher: 0.9947, Accuracy Student: 0.9924
+Finished epoch 11: Train Avg NLLLoss: 0.0018, Dev Avg NLLLoss: 0.0056, Accuracy Teacher: 0.9968, Accuracy Student: 0.9930
+Finished epoch 12: Train Avg NLLLoss: 0.0019, Dev Avg NLLLoss: 0.0055, Accuracy Teacher: 0.9974, Accuracy Student: 0.9940
+Finished epoch 13: Train Avg NLLLoss: 0.0019, Dev Avg NLLLoss: 0.0054, Accuracy Teacher: 0.9970, Accuracy Student: 0.9944
+Finished epoch 14: Train Avg NLLLoss: 0.0018, Dev Avg NLLLoss: 0.0055, Accuracy Teacher: 0.9977, Accuracy Student: 0.9944
+Finished epoch 15: Train Avg NLLLoss: 0.0020, Dev Avg NLLLoss: 0.0055, Accuracy Teacher: 0.9975, Accuracy Student: 0.9935
+Finished epoch 16: Train Avg NLLLoss: 0.0019, Dev Avg NLLLoss: 0.0063, Accuracy Teacher: 0.9976, Accuracy Student: 0.9918
+Finished epoch 17: Train Avg NLLLoss: 0.0019, Dev Avg NLLLoss: 0.0060, Accuracy Teacher: 0.9973, Accuracy Student: 0.9924
+Finished epoch 18: Train Avg NLLLoss: 0.0018, Dev Avg NLLLoss: 0.0057, Accuracy Teacher: 0.9975, Accuracy Student: 0.9944
+Finished epoch 19: Train Avg NLLLoss: 0.0018, Dev Avg NLLLoss: 0.0062, Accuracy Teacher: 0.9976, Accuracy Student: 0.9911
+
+Terminated Training for Early Stopping at Epoch 0020
+Dev Avg NLLLoss: 0.0060, Accuracy Teacher: 0.9964, Accuracy Student: 0.9929
+Dev Avg NLLLoss: 3.6290, Accuracy Teacher GT: 0.6759, Accuracy Student GT: 0.0183
+Saved model to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_3
+Saved model dump to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_3.dump
+********** Starting generation #4 **********
+total steps is equal to  442900
+Finished epoch 1: Train Avg NLLLoss: 0.2178, Dev Avg NLLLoss: 0.0414, Accuracy Teacher: 0.7428, Accuracy Student: 0.9160
+Finished epoch 2: Train Avg NLLLoss: 0.0064, Dev Avg NLLLoss: 0.0120, Accuracy Teacher: 0.9747, Accuracy Student: 0.9862
+Finished epoch 3: Train Avg NLLLoss: 0.0035, Dev Avg NLLLoss: 0.0103, Accuracy Teacher: 0.9886, Accuracy Student: 0.9894
+Finished epoch 4: Train Avg NLLLoss: 0.0031, Dev Avg NLLLoss: 0.0102, Accuracy Teacher: 0.9879, Accuracy Student: 0.9905
+Finished epoch 5: Train Avg NLLLoss: 0.0027, Dev Avg NLLLoss: 0.0104, Accuracy Teacher: 0.9927, Accuracy Student: 0.9904
+Finished epoch 6: Train Avg NLLLoss: 0.0028, Dev Avg NLLLoss: 0.0095, Accuracy Teacher: 0.9928, Accuracy Student: 0.9905
+Finished epoch 7: Train Avg NLLLoss: 0.0030, Dev Avg NLLLoss: 0.0092, Accuracy Teacher: 0.9936, Accuracy Student: 0.9916
+Finished epoch 8: Train Avg NLLLoss: 0.0030, Dev Avg NLLLoss: 0.0096, Accuracy Teacher: 0.9956, Accuracy Student: 0.9923
+Finished epoch 9: Train Avg NLLLoss: 0.0026, Dev Avg NLLLoss: 0.0099, Accuracy Teacher: 0.9948, Accuracy Student: 0.9918
+Finished epoch 10: Train Avg NLLLoss: 0.0031, Dev Avg NLLLoss: 0.0093, Accuracy Teacher: 0.9938, Accuracy Student: 0.9922
+Finished epoch 11: Train Avg NLLLoss: 0.0025, Dev Avg NLLLoss: 0.0092, Accuracy Teacher: 0.9949, Accuracy Student: 0.9921
+Finished epoch 12: Train Avg NLLLoss: 0.0025, Dev Avg NLLLoss: 0.0093, Accuracy Teacher: 0.9963, Accuracy Student: 0.9923
+Finished epoch 13: Train Avg NLLLoss: 0.0026, Dev Avg NLLLoss: 0.0093, Accuracy Teacher: 0.9940, Accuracy Student: 0.9925
+Finished epoch 14: Train Avg NLLLoss: 0.0025, Dev Avg NLLLoss: 0.0095, Accuracy Teacher: 0.9960, Accuracy Student: 0.9920
+Finished epoch 15: Train Avg NLLLoss: 0.0023, Dev Avg NLLLoss: 0.0095, Accuracy Teacher: 0.9954, Accuracy Student: 0.9924
+Finished epoch 16: Train Avg NLLLoss: 0.0029, Dev Avg NLLLoss: 0.0091, Accuracy Teacher: 0.9964, Accuracy Student: 0.9931
+Finished epoch 17: Train Avg NLLLoss: 0.0020, Dev Avg NLLLoss: 0.0091, Accuracy Teacher: 0.9960, Accuracy Student: 0.9923
+Finished epoch 18: Train Avg NLLLoss: 0.0025, Dev Avg NLLLoss: 0.0091, Accuracy Teacher: 0.9946, Accuracy Student: 0.9930
+Finished epoch 19: Train Avg NLLLoss: 0.0026, Dev Avg NLLLoss: 0.0095, Accuracy Teacher: 0.9946, Accuracy Student: 0.9928
+Finished epoch 20: Train Avg NLLLoss: 0.0024, Dev Avg NLLLoss: 0.0096, Accuracy Teacher: 0.9946, Accuracy Student: 0.9929
+Finished epoch 21: Train Avg NLLLoss: 0.0020, Dev Avg NLLLoss: 0.0092, Accuracy Teacher: 0.9941, Accuracy Student: 0.9928
+
+Terminated Training for Early Stopping at Epoch 0022
+Dev Avg NLLLoss: 0.0100, Accuracy Teacher: 0.9962, Accuracy Student: 0.9922
+Dev Avg NLLLoss: 3.2619, Accuracy Teacher GT: 0.6764, Accuracy Student GT: 0.0254
+Saved model to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_4
+Saved model dump to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_4.dump
+********** Starting generation #5 **********
+total steps is equal to  442900
+Finished epoch 1: Train Avg NLLLoss: 0.2018, Dev Avg NLLLoss: 0.0252, Accuracy Teacher: 0.8264, Accuracy Student: 0.9438
+Finished epoch 2: Train Avg NLLLoss: 0.0114, Dev Avg NLLLoss: 0.0145, Accuracy Teacher: 0.9694, Accuracy Student: 0.9766
+Finished epoch 3: Train Avg NLLLoss: 0.0077, Dev Avg NLLLoss: 0.0129, Accuracy Teacher: 0.9835, Accuracy Student: 0.9826
+Finished epoch 4: Train Avg NLLLoss: 0.0064, Dev Avg NLLLoss: 0.0120, Accuracy Teacher: 0.9860, Accuracy Student: 0.9854
+Finished epoch 5: Train Avg NLLLoss: 0.0060, Dev Avg NLLLoss: 0.0122, Accuracy Teacher: 0.9872, Accuracy Student: 0.9837
+Finished epoch 6: Train Avg NLLLoss: 0.0061, Dev Avg NLLLoss: 0.0133, Accuracy Teacher: 0.9903, Accuracy Student: 0.9810
+Finished epoch 7: Train Avg NLLLoss: 0.0057, Dev Avg NLLLoss: 0.0117, Accuracy Teacher: 0.9874, Accuracy Student: 0.9865
+Finished epoch 8: Train Avg NLLLoss: 0.0051, Dev Avg NLLLoss: 0.0116, Accuracy Teacher: 0.9867, Accuracy Student: 0.9845
+Finished epoch 9: Train Avg NLLLoss: 0.0050, Dev Avg NLLLoss: 0.0118, Accuracy Teacher: 0.9919, Accuracy Student: 0.9866
+Finished epoch 10: Train Avg NLLLoss: 0.0050, Dev Avg NLLLoss: 0.0118, Accuracy Teacher: 0.9918, Accuracy Student: 0.9872
+Finished epoch 11: Train Avg NLLLoss: 0.0046, Dev Avg NLLLoss: 0.0119, Accuracy Teacher: 0.9924, Accuracy Student: 0.9862
+Finished epoch 12: Train Avg NLLLoss: 0.0047, Dev Avg NLLLoss: 0.0114, Accuracy Teacher: 0.9936, Accuracy Student: 0.9870
+Finished epoch 13: Train Avg NLLLoss: 0.0041, Dev Avg NLLLoss: 0.0116, Accuracy Teacher: 0.9932, Accuracy Student: 0.9863
+Finished epoch 14: Train Avg NLLLoss: 0.0042, Dev Avg NLLLoss: 0.0115, Accuracy Teacher: 0.9941, Accuracy Student: 0.9872
+Finished epoch 15: Train Avg NLLLoss: 0.0041, Dev Avg NLLLoss: 0.0116, Accuracy Teacher: 0.9944, Accuracy Student: 0.9879
+Finished epoch 16: Train Avg NLLLoss: 0.0040, Dev Avg NLLLoss: 0.0119, Accuracy Teacher: 0.9951, Accuracy Student: 0.9876
+Finished epoch 17: Train Avg NLLLoss: 0.0039, Dev Avg NLLLoss: 0.0122, Accuracy Teacher: 0.9933, Accuracy Student: 0.9874
+Finished epoch 18: Train Avg NLLLoss: 0.0044, Dev Avg NLLLoss: 0.0121, Accuracy Teacher: 0.9936, Accuracy Student: 0.9879
+Finished epoch 19: Train Avg NLLLoss: 0.0036, Dev Avg NLLLoss: 0.0117, Accuracy Teacher: 0.9929, Accuracy Student: 0.9881
+Finished epoch 20: Train Avg NLLLoss: 0.0040, Dev Avg NLLLoss: 0.0114, Accuracy Teacher: 0.9940, Accuracy Student: 0.9889
+Finished epoch 21: Train Avg NLLLoss: 0.0037, Dev Avg NLLLoss: 0.0113, Accuracy Teacher: 0.9948, Accuracy Student: 0.9886
+Finished epoch 22: Train Avg NLLLoss: 0.0032, Dev Avg NLLLoss: 0.0122, Accuracy Teacher: 0.9929, Accuracy Student: 0.9880
+Finished epoch 23: Train Avg NLLLoss: 0.0040, Dev Avg NLLLoss: 0.0116, Accuracy Teacher: 0.9935, Accuracy Student: 0.9884
+Finished epoch 24: Train Avg NLLLoss: 0.0037, Dev Avg NLLLoss: 0.0113, Accuracy Teacher: 0.9949, Accuracy Student: 0.9889
+Finished epoch 25: Train Avg NLLLoss: 0.0033, Dev Avg NLLLoss: 0.0111, Accuracy Teacher: 0.9938, Accuracy Student: 0.9888
+
+Terminated Training for Early Stopping at Epoch 0026
+Dev Avg NLLLoss: 0.0115, Accuracy Teacher: 0.9931, Accuracy Student: 0.9877
+Dev Avg NLLLoss: 2.9242, Accuracy Teacher GT: 0.6807, Accuracy Student GT: 0.0185
+Saved model to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_5
+Saved model dump to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_5.dump
+********** Starting generation #6 **********
+total steps is equal to  442900
+Finished epoch 1: Train Avg NLLLoss: 0.1871, Dev Avg NLLLoss: 0.0336, Accuracy Teacher: 0.9173, Accuracy Student: 0.9469
+Finished epoch 2: Train Avg NLLLoss: 0.0083, Dev Avg NLLLoss: 0.0215, Accuracy Teacher: 0.9788, Accuracy Student: 0.9748
+Finished epoch 3: Train Avg NLLLoss: 0.0066, Dev Avg NLLLoss: 0.0208, Accuracy Teacher: 0.9872, Accuracy Student: 0.9762
+Finished epoch 4: Train Avg NLLLoss: 0.0065, Dev Avg NLLLoss: 0.0206, Accuracy Teacher: 0.9846, Accuracy Student: 0.9776
+Finished epoch 5: Train Avg NLLLoss: 0.0063, Dev Avg NLLLoss: 0.0213, Accuracy Teacher: 0.9890, Accuracy Student: 0.9788
+Finished epoch 6: Train Avg NLLLoss: 0.0074, Dev Avg NLLLoss: 0.0203, Accuracy Teacher: 0.9923, Accuracy Student: 0.9786
+Finished epoch 7: Train Avg NLLLoss: 0.0054, Dev Avg NLLLoss: 0.0182, Accuracy Teacher: 0.9902, Accuracy Student: 0.9817
+Finished epoch 8: Train Avg NLLLoss: 0.0048, Dev Avg NLLLoss: 0.0187, Accuracy Teacher: 0.9901, Accuracy Student: 0.9821
+Finished epoch 9: Train Avg NLLLoss: 0.0060, Dev Avg NLLLoss: 0.0195, Accuracy Teacher: 0.9907, Accuracy Student: 0.9820
+Finished epoch 10: Train Avg NLLLoss: 0.0058, Dev Avg NLLLoss: 0.0192, Accuracy Teacher: 0.9902, Accuracy Student: 0.9807
+Finished epoch 11: Train Avg NLLLoss: 0.0046, Dev Avg NLLLoss: 0.0182, Accuracy Teacher: 0.9921, Accuracy Student: 0.9830
+Finished epoch 12: Train Avg NLLLoss: 0.0048, Dev Avg NLLLoss: 0.0185, Accuracy Teacher: 0.9920, Accuracy Student: 0.9841
+Finished epoch 13: Train Avg NLLLoss: 0.0050, Dev Avg NLLLoss: 0.0182, Accuracy Teacher: 0.9937, Accuracy Student: 0.9846
+Finished epoch 14: Train Avg NLLLoss: 0.0044, Dev Avg NLLLoss: 0.0189, Accuracy Teacher: 0.9921, Accuracy Student: 0.9845
+Finished epoch 15: Train Avg NLLLoss: 0.0051, Dev Avg NLLLoss: 0.0188, Accuracy Teacher: 0.9929, Accuracy Student: 0.9835
+Finished epoch 16: Train Avg NLLLoss: 0.0049, Dev Avg NLLLoss: 0.0194, Accuracy Teacher: 0.9945, Accuracy Student: 0.9839
+Finished epoch 17: Train Avg NLLLoss: 0.0041, Dev Avg NLLLoss: 0.0191, Accuracy Teacher: 0.9912, Accuracy Student: 0.9835
+Finished epoch 18: Train Avg NLLLoss: 0.0044, Dev Avg NLLLoss: 0.0193, Accuracy Teacher: 0.9919, Accuracy Student: 0.9829
+Finished epoch 19: Train Avg NLLLoss: 0.0043, Dev Avg NLLLoss: 0.0189, Accuracy Teacher: 0.9932, Accuracy Student: 0.9845
+Finished epoch 20: Train Avg NLLLoss: 0.0053, Dev Avg NLLLoss: 0.0187, Accuracy Teacher: 0.9935, Accuracy Student: 0.9846
+Finished epoch 21: Train Avg NLLLoss: 0.0057, Dev Avg NLLLoss: 0.0212, Accuracy Teacher: 0.9938, Accuracy Student: 0.9832
+
+Terminated Training for Early Stopping at Epoch 0022
+Dev Avg NLLLoss: 0.0228, Accuracy Teacher: 0.9940, Accuracy Student: 0.9819
+Dev Avg NLLLoss: 3.0225, Accuracy Teacher GT: 0.6689, Accuracy Student GT: 0.0213
+Saved model to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_6
+Saved model dump to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_6.dump
+********** Starting generation #7 **********
+total steps is equal to  442900
+Finished epoch 1: Train Avg NLLLoss: 0.2413, Dev Avg NLLLoss: 0.0375, Accuracy Teacher: 0.6817, Accuracy Student: 0.9266
+Finished epoch 2: Train Avg NLLLoss: 0.0121, Dev Avg NLLLoss: 0.0240, Accuracy Teacher: 0.9645, Accuracy Student: 0.9656
+Finished epoch 3: Train Avg NLLLoss: 0.0080, Dev Avg NLLLoss: 0.0219, Accuracy Teacher: 0.9797, Accuracy Student: 0.9700
+Finished epoch 4: Train Avg NLLLoss: 0.0070, Dev Avg NLLLoss: 0.0214, Accuracy Teacher: 0.9834, Accuracy Student: 0.9732
+Finished epoch 5: Train Avg NLLLoss: 0.0065, Dev Avg NLLLoss: 0.0220, Accuracy Teacher: 0.9880, Accuracy Student: 0.9710
+Finished epoch 6: Train Avg NLLLoss: 0.0061, Dev Avg NLLLoss: 0.0230, Accuracy Teacher: 0.9868, Accuracy Student: 0.9705
+Finished epoch 7: Train Avg NLLLoss: 0.0062, Dev Avg NLLLoss: 0.0215, Accuracy Teacher: 0.9869, Accuracy Student: 0.9758
+Finished epoch 8: Train Avg NLLLoss: 0.0058, Dev Avg NLLLoss: 0.0211, Accuracy Teacher: 0.9892, Accuracy Student: 0.9758
+Finished epoch 9: Train Avg NLLLoss: 0.0062, Dev Avg NLLLoss: 0.0212, Accuracy Teacher: 0.9913, Accuracy Student: 0.9770
+Finished epoch 10: Train Avg NLLLoss: 0.0053, Dev Avg NLLLoss: 0.0235, Accuracy Teacher: 0.9904, Accuracy Student: 0.9758
+Finished epoch 11: Train Avg NLLLoss: 0.0057, Dev Avg NLLLoss: 0.0243, Accuracy Teacher: 0.9904, Accuracy Student: 0.9746
+Finished epoch 12: Train Avg NLLLoss: 0.0057, Dev Avg NLLLoss: 0.0224, Accuracy Teacher: 0.9894, Accuracy Student: 0.9767
+Finished epoch 13: Train Avg NLLLoss: 0.0052, Dev Avg NLLLoss: 0.0225, Accuracy Teacher: 0.9893, Accuracy Student: 0.9777
+Finished epoch 14: Train Avg NLLLoss: 0.0050, Dev Avg NLLLoss: 0.0232, Accuracy Teacher: 0.9903, Accuracy Student: 0.9782
+Finished epoch 15: Train Avg NLLLoss: 0.0049, Dev Avg NLLLoss: 0.0229, Accuracy Teacher: 0.9892, Accuracy Student: 0.9796
+Finished epoch 16: Train Avg NLLLoss: 0.0052, Dev Avg NLLLoss: 0.0233, Accuracy Teacher: 0.9896, Accuracy Student: 0.9787
+Finished epoch 17: Train Avg NLLLoss: 0.0056, Dev Avg NLLLoss: 0.0229, Accuracy Teacher: 0.9876, Accuracy Student: 0.9794
+Finished epoch 18: Train Avg NLLLoss: 0.0050, Dev Avg NLLLoss: 0.0239, Accuracy Teacher: 0.9889, Accuracy Student: 0.9792
+Finished epoch 19: Train Avg NLLLoss: 0.0055, Dev Avg NLLLoss: 0.0248, Accuracy Teacher: 0.9901, Accuracy Student: 0.9784
+Finished epoch 20: Train Avg NLLLoss: 0.0050, Dev Avg NLLLoss: 0.0231, Accuracy Teacher: 0.9912, Accuracy Student: 0.9801
+Finished epoch 21: Train Avg NLLLoss: 0.0050, Dev Avg NLLLoss: 0.0222, Accuracy Teacher: 0.9906, Accuracy Student: 0.9805
+Finished epoch 22: Train Avg NLLLoss: 0.0049, Dev Avg NLLLoss: 0.0230, Accuracy Teacher: 0.9921, Accuracy Student: 0.9808
+Finished epoch 23: Train Avg NLLLoss: 0.0046, Dev Avg NLLLoss: 0.0245, Accuracy Teacher: 0.9905, Accuracy Student: 0.9796
+Finished epoch 24: Train Avg NLLLoss: 0.0050, Dev Avg NLLLoss: 0.0235, Accuracy Teacher: 0.9893, Accuracy Student: 0.9811
+Finished epoch 25: Train Avg NLLLoss: 0.0050, Dev Avg NLLLoss: 0.0226, Accuracy Teacher: 0.9919, Accuracy Student: 0.9815
+Finished epoch 26: Train Avg NLLLoss: 0.0047, Dev Avg NLLLoss: 0.0241, Accuracy Teacher: 0.9916, Accuracy Student: 0.9806
+Finished epoch 27: Train Avg NLLLoss: 0.0049, Dev Avg NLLLoss: 0.0233, Accuracy Teacher: 0.9893, Accuracy Student: 0.9810
+Finished epoch 28: Train Avg NLLLoss: 0.0049, Dev Avg NLLLoss: 0.0243, Accuracy Teacher: 0.9914, Accuracy Student: 0.9806
+Finished epoch 29: Train Avg NLLLoss: 0.0048, Dev Avg NLLLoss: 0.0237, Accuracy Teacher: 0.9925, Accuracy Student: 0.9812
+Finished epoch 30: Train Avg NLLLoss: 0.0047, Dev Avg NLLLoss: 0.0246, Accuracy Teacher: 0.9937, Accuracy Student: 0.9798
+Finished epoch 31: Train Avg NLLLoss: 0.0051, Dev Avg NLLLoss: 0.0248, Accuracy Teacher: 0.9897, Accuracy Student: 0.9789
+Finished epoch 32: Train Avg NLLLoss: 0.0048, Dev Avg NLLLoss: 0.0248, Accuracy Teacher: 0.9905, Accuracy Student: 0.9806
+Finished epoch 33: Train Avg NLLLoss: 0.0045, Dev Avg NLLLoss: 0.0237, Accuracy Teacher: 0.9931, Accuracy Student: 0.9812
+Finished epoch 34: Train Avg NLLLoss: 0.0046, Dev Avg NLLLoss: 0.0265, Accuracy Teacher: 0.9915, Accuracy Student: 0.9804
+Finished epoch 35: Train Avg NLLLoss: 0.0046, Dev Avg NLLLoss: 0.0238, Accuracy Teacher: 0.9912, Accuracy Student: 0.9809
+
+Terminated Training for Early Stopping at Epoch 0036
+Dev Avg NLLLoss: 0.0258, Accuracy Teacher: 0.9916, Accuracy Student: 0.9805
+Dev Avg NLLLoss: 3.7838, Accuracy Teacher GT: 0.6673, Accuracy Student GT: 0.0173
+Saved model to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_7
+Saved model dump to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_7.dump
+********** Starting generation #8 **********
+total steps is equal to  442900
+Finished epoch 1: Train Avg NLLLoss: 0.2750, Dev Avg NLLLoss: 0.0913, Accuracy Teacher: 0.5407, Accuracy Student: 0.7838
+Finished epoch 2: Train Avg NLLLoss: 0.0197, Dev Avg NLLLoss: 0.0398, Accuracy Teacher: 0.9533, Accuracy Student: 0.9429
+Finished epoch 3: Train Avg NLLLoss: 0.0127, Dev Avg NLLLoss: 0.0359, Accuracy Teacher: 0.9785, Accuracy Student: 0.9508
+Finished epoch 4: Train Avg NLLLoss: 0.0101, Dev Avg NLLLoss: 0.0296, Accuracy Teacher: 0.9833, Accuracy Student: 0.9628
+Finished epoch 5: Train Avg NLLLoss: 0.0111, Dev Avg NLLLoss: 0.0304, Accuracy Teacher: 0.9820, Accuracy Student: 0.9641
+Finished epoch 6: Train Avg NLLLoss: 0.0093, Dev Avg NLLLoss: 0.0294, Accuracy Teacher: 0.9834, Accuracy Student: 0.9664
+Finished epoch 7: Train Avg NLLLoss: 0.0090, Dev Avg NLLLoss: 0.0315, Accuracy Teacher: 0.9836, Accuracy Student: 0.9655
+Finished epoch 8: Train Avg NLLLoss: 0.0073, Dev Avg NLLLoss: 0.0296, Accuracy Teacher: 0.9868, Accuracy Student: 0.9673
+Finished epoch 9: Train Avg NLLLoss: 0.0073, Dev Avg NLLLoss: 0.0360, Accuracy Teacher: 0.9853, Accuracy Student: 0.9623
+Finished epoch 10: Train Avg NLLLoss: 0.0067, Dev Avg NLLLoss: 0.0283, Accuracy Teacher: 0.9867, Accuracy Student: 0.9699
+Finished epoch 11: Train Avg NLLLoss: 0.0066, Dev Avg NLLLoss: 0.0305, Accuracy Teacher: 0.9859, Accuracy Student: 0.9701
+Finished epoch 12: Train Avg NLLLoss: 0.0085, Dev Avg NLLLoss: 0.0287, Accuracy Teacher: 0.9860, Accuracy Student: 0.9709
+Finished epoch 13: Train Avg NLLLoss: 0.0070, Dev Avg NLLLoss: 0.0309, Accuracy Teacher: 0.9887, Accuracy Student: 0.9698
+Finished epoch 14: Train Avg NLLLoss: 0.0073, Dev Avg NLLLoss: 0.0292, Accuracy Teacher: 0.9874, Accuracy Student: 0.9714
+Finished epoch 15: Train Avg NLLLoss: 0.0075, Dev Avg NLLLoss: 0.0328, Accuracy Teacher: 0.9895, Accuracy Student: 0.9683
+Finished epoch 16: Train Avg NLLLoss: 0.0082, Dev Avg NLLLoss: 0.0295, Accuracy Teacher: 0.9866, Accuracy Student: 0.9695
+Finished epoch 17: Train Avg NLLLoss: 0.0071, Dev Avg NLLLoss: 0.0311, Accuracy Teacher: 0.9890, Accuracy Student: 0.9723
+Finished epoch 18: Train Avg NLLLoss: 0.0075, Dev Avg NLLLoss: 0.0285, Accuracy Teacher: 0.9884, Accuracy Student: 0.9733
+Finished epoch 19: Train Avg NLLLoss: 0.0062, Dev Avg NLLLoss: 0.0289, Accuracy Teacher: 0.9914, Accuracy Student: 0.9714
+Finished epoch 20: Train Avg NLLLoss: 0.0073, Dev Avg NLLLoss: 0.0302, Accuracy Teacher: 0.9883, Accuracy Student: 0.9699
+Finished epoch 21: Train Avg NLLLoss: 0.0074, Dev Avg NLLLoss: 0.0295, Accuracy Teacher: 0.9914, Accuracy Student: 0.9739
+Finished epoch 22: Train Avg NLLLoss: 0.0067, Dev Avg NLLLoss: 0.0294, Accuracy Teacher: 0.9875, Accuracy Student: 0.9727
+Finished epoch 23: Train Avg NLLLoss: 0.0067, Dev Avg NLLLoss: 0.0311, Accuracy Teacher: 0.9896, Accuracy Student: 0.9716
+Finished epoch 24: Train Avg NLLLoss: 0.0059, Dev Avg NLLLoss: 0.0290, Accuracy Teacher: 0.9893, Accuracy Student: 0.9748
+Finished epoch 25: Train Avg NLLLoss: 0.0073, Dev Avg NLLLoss: 0.0283, Accuracy Teacher: 0.9870, Accuracy Student: 0.9754
+Finished epoch 26: Train Avg NLLLoss: 0.0067, Dev Avg NLLLoss: 0.0306, Accuracy Teacher: 0.9872, Accuracy Student: 0.9704
+Finished epoch 27: Train Avg NLLLoss: 0.0064, Dev Avg NLLLoss: 0.0306, Accuracy Teacher: 0.9884, Accuracy Student: 0.9730
+Finished epoch 28: Train Avg NLLLoss: 0.0064, Dev Avg NLLLoss: 0.0309, Accuracy Teacher: 0.9909, Accuracy Student: 0.9715
+Finished epoch 29: Train Avg NLLLoss: 0.0073, Dev Avg NLLLoss: 0.0290, Accuracy Teacher: 0.9909, Accuracy Student: 0.9717
+Finished epoch 30: Train Avg NLLLoss: 0.0061, Dev Avg NLLLoss: 0.0292, Accuracy Teacher: 0.9878, Accuracy Student: 0.9739
+
+Terminated Training for Early Stopping at Epoch 0031
+Dev Avg NLLLoss: 0.0320, Accuracy Teacher: 0.9880, Accuracy Student: 0.9699
+Dev Avg NLLLoss: 3.3741, Accuracy Teacher GT: 0.6529, Accuracy Student GT: 0.0163
+Saved model to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_8
+Saved model dump to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_8.dump
+********** Starting generation #9 **********
+total steps is equal to  442900
+Finished epoch 1: Train Avg NLLLoss: 0.2604, Dev Avg NLLLoss: 0.0948, Accuracy Teacher: 0.5475, Accuracy Student: 0.8688
+Finished epoch 2: Train Avg NLLLoss: 0.0175, Dev Avg NLLLoss: 0.0606, Accuracy Teacher: 0.9621, Accuracy Student: 0.9382
+Finished epoch 3: Train Avg NLLLoss: 0.0103, Dev Avg NLLLoss: 0.0481, Accuracy Teacher: 0.9734, Accuracy Student: 0.9580
+Finished epoch 4: Train Avg NLLLoss: 0.0087, Dev Avg NLLLoss: 0.0417, Accuracy Teacher: 0.9769, Accuracy Student: 0.9631
+Finished epoch 5: Train Avg NLLLoss: 0.0081, Dev Avg NLLLoss: 0.0436, Accuracy Teacher: 0.9832, Accuracy Student: 0.9615
+Finished epoch 6: Train Avg NLLLoss: 0.0082, Dev Avg NLLLoss: 0.0442, Accuracy Teacher: 0.9820, Accuracy Student: 0.9639
+Finished epoch 7: Train Avg NLLLoss: 0.0081, Dev Avg NLLLoss: 0.0419, Accuracy Teacher: 0.9870, Accuracy Student: 0.9656
+Finished epoch 8: Train Avg NLLLoss: 0.0072, Dev Avg NLLLoss: 0.0419, Accuracy Teacher: 0.9848, Accuracy Student: 0.9655
+Finished epoch 9: Train Avg NLLLoss: 0.0073, Dev Avg NLLLoss: 0.0466, Accuracy Teacher: 0.9853, Accuracy Student: 0.9638
+Finished epoch 10: Train Avg NLLLoss: 0.0071, Dev Avg NLLLoss: 0.0423, Accuracy Teacher: 0.9862, Accuracy Student: 0.9669
+Finished epoch 11: Train Avg NLLLoss: 0.0075, Dev Avg NLLLoss: 0.0427, Accuracy Teacher: 0.9877, Accuracy Student: 0.9677
+Finished epoch 12: Train Avg NLLLoss: 0.0069, Dev Avg NLLLoss: 0.0473, Accuracy Teacher: 0.9860, Accuracy Student: 0.9647
+Finished epoch 13: Train Avg NLLLoss: 0.0066, Dev Avg NLLLoss: 0.0482, Accuracy Teacher: 0.9881, Accuracy Student: 0.9660
+Finished epoch 14: Train Avg NLLLoss: 0.0073, Dev Avg NLLLoss: 0.0452, Accuracy Teacher: 0.9888, Accuracy Student: 0.9650
+Finished epoch 15: Train Avg NLLLoss: 0.0065, Dev Avg NLLLoss: 0.0449, Accuracy Teacher: 0.9868, Accuracy Student: 0.9680
+Finished epoch 16: Train Avg NLLLoss: 0.0066, Dev Avg NLLLoss: 0.0415, Accuracy Teacher: 0.9881, Accuracy Student: 0.9690
+Finished epoch 17: Train Avg NLLLoss: 0.0065, Dev Avg NLLLoss: 0.0437, Accuracy Teacher: 0.9876, Accuracy Student: 0.9692
+Finished epoch 18: Train Avg NLLLoss: 0.0067, Dev Avg NLLLoss: 0.0443, Accuracy Teacher: 0.9884, Accuracy Student: 0.9665
+Finished epoch 19: Train Avg NLLLoss: 0.0070, Dev Avg NLLLoss: 0.0455, Accuracy Teacher: 0.9893, Accuracy Student: 0.9674
+Finished epoch 20: Train Avg NLLLoss: 0.0065, Dev Avg NLLLoss: 0.0425, Accuracy Teacher: 0.9901, Accuracy Student: 0.9684
+Finished epoch 21: Train Avg NLLLoss: 0.0064, Dev Avg NLLLoss: 0.0458, Accuracy Teacher: 0.9875, Accuracy Student: 0.9673
+Finished epoch 22: Train Avg NLLLoss: 0.0064, Dev Avg NLLLoss: 0.0419, Accuracy Teacher: 0.9884, Accuracy Student: 0.9705
+Finished epoch 23: Train Avg NLLLoss: 0.0067, Dev Avg NLLLoss: 0.0489, Accuracy Teacher: 0.9885, Accuracy Student: 0.9669
+Finished epoch 24: Train Avg NLLLoss: 0.0065, Dev Avg NLLLoss: 0.0434, Accuracy Teacher: 0.9874, Accuracy Student: 0.9690
+Finished epoch 25: Train Avg NLLLoss: 0.0063, Dev Avg NLLLoss: 0.0431, Accuracy Teacher: 0.9886, Accuracy Student: 0.9692
+Finished epoch 26: Train Avg NLLLoss: 0.0064, Dev Avg NLLLoss: 0.0455, Accuracy Teacher: 0.9905, Accuracy Student: 0.9686
+Finished epoch 27: Train Avg NLLLoss: 0.0064, Dev Avg NLLLoss: 0.0422, Accuracy Teacher: 0.9893, Accuracy Student: 0.9699
+Finished epoch 28: Train Avg NLLLoss: 0.0062, Dev Avg NLLLoss: 0.0442, Accuracy Teacher: 0.9903, Accuracy Student: 0.9695
+Finished epoch 29: Train Avg NLLLoss: 0.0067, Dev Avg NLLLoss: 0.0474, Accuracy Teacher: 0.9883, Accuracy Student: 0.9647
+Finished epoch 30: Train Avg NLLLoss: 0.0062, Dev Avg NLLLoss: 0.0441, Accuracy Teacher: 0.9870, Accuracy Student: 0.9675
+Finished epoch 31: Train Avg NLLLoss: 0.0067, Dev Avg NLLLoss: 0.0437, Accuracy Teacher: 0.9904, Accuracy Student: 0.9689
+
+Terminated Training for Early Stopping at Epoch 0032
+Dev Avg NLLLoss: 0.0518, Accuracy Teacher: 0.9898, Accuracy Student: 0.9669
+Dev Avg NLLLoss: 3.6295, Accuracy Teacher GT: 0.6615, Accuracy Student GT: 0.0193
+Saved model to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_9
+Saved model dump to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_9.dump
+********** Starting generation #10 **********
+total steps is equal to  442900
+Finished epoch 1: Train Avg NLLLoss: 0.2319, Dev Avg NLLLoss: 0.0630, Accuracy Teacher: 0.5187, Accuracy Student: 0.8780
+Finished epoch 2: Train Avg NLLLoss: 0.0202, Dev Avg NLLLoss: 0.0442, Accuracy Teacher: 0.9372, Accuracy Student: 0.9476
+Finished epoch 3: Train Avg NLLLoss: 0.0116, Dev Avg NLLLoss: 0.0414, Accuracy Teacher: 0.9670, Accuracy Student: 0.9584
+Finished epoch 4: Train Avg NLLLoss: 0.0101, Dev Avg NLLLoss: 0.0433, Accuracy Teacher: 0.9729, Accuracy Student: 0.9598
+Finished epoch 5: Train Avg NLLLoss: 0.0093, Dev Avg NLLLoss: 0.0424, Accuracy Teacher: 0.9756, Accuracy Student: 0.9620
+Finished epoch 6: Train Avg NLLLoss: 0.0085, Dev Avg NLLLoss: 0.0450, Accuracy Teacher: 0.9794, Accuracy Student: 0.9617
+Finished epoch 7: Train Avg NLLLoss: 0.0089, Dev Avg NLLLoss: 0.0439, Accuracy Teacher: 0.9822, Accuracy Student: 0.9648
+Finished epoch 8: Train Avg NLLLoss: 0.0083, Dev Avg NLLLoss: 0.0417, Accuracy Teacher: 0.9824, Accuracy Student: 0.9669
+Finished epoch 9: Train Avg NLLLoss: 0.0083, Dev Avg NLLLoss: 0.0423, Accuracy Teacher: 0.9831, Accuracy Student: 0.9659
+Finished epoch 10: Train Avg NLLLoss: 0.0077, Dev Avg NLLLoss: 0.0420, Accuracy Teacher: 0.9844, Accuracy Student: 0.9665
+Finished epoch 11: Train Avg NLLLoss: 0.0079, Dev Avg NLLLoss: 0.0422, Accuracy Teacher: 0.9831, Accuracy Student: 0.9673
+Finished epoch 12: Train Avg NLLLoss: 0.0075, Dev Avg NLLLoss: 0.0417, Accuracy Teacher: 0.9827, Accuracy Student: 0.9683
+Finished epoch 13: Train Avg NLLLoss: 0.0076, Dev Avg NLLLoss: 0.0451, Accuracy Teacher: 0.9829, Accuracy Student: 0.9668
+Finished epoch 14: Train Avg NLLLoss: 0.0077, Dev Avg NLLLoss: 0.0437, Accuracy Teacher: 0.9815, Accuracy Student: 0.9672
+Finished epoch 15: Train Avg NLLLoss: 0.0077, Dev Avg NLLLoss: 0.0423, Accuracy Teacher: 0.9858, Accuracy Student: 0.9681
+Finished epoch 16: Train Avg NLLLoss: 0.0076, Dev Avg NLLLoss: 0.0427, Accuracy Teacher: 0.9849, Accuracy Student: 0.9689
+Finished epoch 17: Train Avg NLLLoss: 0.0077, Dev Avg NLLLoss: 0.0426, Accuracy Teacher: 0.9837, Accuracy Student: 0.9672
+Finished epoch 18: Train Avg NLLLoss: 0.0073, Dev Avg NLLLoss: 0.0454, Accuracy Teacher: 0.9862, Accuracy Student: 0.9670
+Finished epoch 19: Train Avg NLLLoss: 0.0075, Dev Avg NLLLoss: 0.0418, Accuracy Teacher: 0.9857, Accuracy Student: 0.9693
+Finished epoch 20: Train Avg NLLLoss: 0.0075, Dev Avg NLLLoss: 0.0426, Accuracy Teacher: 0.9846, Accuracy Student: 0.9685
+Finished epoch 21: Train Avg NLLLoss: 0.0073, Dev Avg NLLLoss: 0.0420, Accuracy Teacher: 0.9846, Accuracy Student: 0.9696
+Finished epoch 22: Train Avg NLLLoss: 0.0070, Dev Avg NLLLoss: 0.0418, Accuracy Teacher: 0.9857, Accuracy Student: 0.9685
+Finished epoch 23: Train Avg NLLLoss: 0.0071, Dev Avg NLLLoss: 0.0416, Accuracy Teacher: 0.9857, Accuracy Student: 0.9690
+Finished epoch 24: Train Avg NLLLoss: 0.0070, Dev Avg NLLLoss: 0.0416, Accuracy Teacher: 0.9867, Accuracy Student: 0.9689
+Finished epoch 25: Train Avg NLLLoss: 0.0073, Dev Avg NLLLoss: 0.0430, Accuracy Teacher: 0.9876, Accuracy Student: 0.9690
+Finished epoch 26: Train Avg NLLLoss: 0.0069, Dev Avg NLLLoss: 0.0416, Accuracy Teacher: 0.9853, Accuracy Student: 0.9698
+Finished epoch 27: Train Avg NLLLoss: 0.0075, Dev Avg NLLLoss: 0.0426, Accuracy Teacher: 0.9861, Accuracy Student: 0.9700
+Finished epoch 28: Train Avg NLLLoss: 0.0072, Dev Avg NLLLoss: 0.0420, Accuracy Teacher: 0.9870, Accuracy Student: 0.9698
+Finished epoch 29: Train Avg NLLLoss: 0.0068, Dev Avg NLLLoss: 0.0412, Accuracy Teacher: 0.9870, Accuracy Student: 0.9702
+Finished epoch 30: Train Avg NLLLoss: 0.0071, Dev Avg NLLLoss: 0.0447, Accuracy Teacher: 0.9860, Accuracy Student: 0.9684
+Finished epoch 31: Train Avg NLLLoss: 0.0072, Dev Avg NLLLoss: 0.0444, Accuracy Teacher: 0.9843, Accuracy Student: 0.9692
+Finished epoch 32: Train Avg NLLLoss: 0.0070, Dev Avg NLLLoss: 0.0425, Accuracy Teacher: 0.9860, Accuracy Student: 0.9689
+Finished epoch 33: Train Avg NLLLoss: 0.0068, Dev Avg NLLLoss: 0.0442, Accuracy Teacher: 0.9846, Accuracy Student: 0.9688
+Finished epoch 34: Train Avg NLLLoss: 0.0066, Dev Avg NLLLoss: 0.0425, Accuracy Teacher: 0.9875, Accuracy Student: 0.9701
+
+Terminated Training for Early Stopping at Epoch 0035
+Dev Avg NLLLoss: 0.0461, Accuracy Teacher: 0.9845, Accuracy Student: 0.9695
+Dev Avg NLLLoss: 2.5917, Accuracy Teacher GT: 0.6605, Accuracy Student GT: 0.0266
+/home1/lianyuchen/anaconda3/envs/pytorch14/lib/python3.7/site-packages/torch/nn/_reduction.py:43: UserWarning: size_average and reduce args will be deprecated, please use reduction='mean' instead.
+  warnings.warn(warning.format(ret))
+/home1/lianyuchen/anaconda3/envs/pytorch14/lib/python3.7/site-packages/torch/nn/functional.py:1340: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+/home1/lianyuchen/PycharmProjects/brica_test/t2s/s2s.py:34: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  lengths = torch.tensor(lengths, device=device)
+Saved model to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_10
+Saved model dump to ./experiments/models/model_attention1_hidden20_batch16_epoch100_tied1_seed1230.p.iteration_10.dump
+model_attention1_hidden20_batch16_epoch100_tied1_seed1230
+407178.35
